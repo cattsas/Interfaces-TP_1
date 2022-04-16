@@ -13,7 +13,7 @@ let a = 255;
 
 function drawRect(imageData, r, g, b, a) {
     for (let x = 0; x < width / 2; x++) { //variando el valor de r y g en funcion de x, hago un degrade
-        let coeficiente = 255 / (width / 2); //se utiliza esto para que el degradado abarque todo el ancho, no solo los 255 pixels
+        let coeficiente = 255 / (width / 2); //se utiliza esto para que el degradado abarque la mitad del ancho
         r = coeficiente * x;
         g = coeficiente * x;
         b = 0;
@@ -24,7 +24,7 @@ function drawRect(imageData, r, g, b, a) {
     }
 
     for (let x = width / 2; x < width; x++) { //variando el valor de r y g en funcion de x, hago un degrade
-        let coeficiente = 255 / (width / 2); //se utiliza esto para que el degradado abarque todo el ancho, no solo los 255 pixels
+        let coeficiente = 255 / (width / 2); //se utiliza esto para que el degradado abarque la mitad del ancho
         r = 255;
         g = coeficiente * (width - x);
         b = 0;
