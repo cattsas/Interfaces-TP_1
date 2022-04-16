@@ -1,0 +1,1 @@
+let ctx=/** @type {CanvasRenderingContext2D} */ (document.getElementById("mycanvas").getContext("2d"));
